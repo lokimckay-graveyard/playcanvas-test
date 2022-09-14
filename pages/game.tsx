@@ -43,7 +43,9 @@ const GamePage = () => {
     app.start();
   }, [])
 
-  return <canvas ref={canvasRef} id='application'></canvas>
+  return <>
+  <button onClick={() => document.body.requestFullscreen()}>Fullscreen</button>
+  <canvas ref={canvasRef} id='application'></canvas></>
   
 };
 
